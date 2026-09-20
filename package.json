@@ -1,0 +1,15 @@
+{
+  "name": "yasinkaya-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Yasin Kaya Kucukbas — portfolio site",
+  "scripts": {
+    "css": "tailwindcss -i ./src/input.css -o ./assets/tailwind.css --minify",
+    "build": "npm run css && node scripts/build.cjs",
+    "dev": "tailwindcss -i ./src/input.css -o ./assets/tailwind.css --watch",
+    "start": "node scripts/preview.cjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
