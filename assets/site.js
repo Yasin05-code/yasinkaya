@@ -39,28 +39,25 @@
     var links = document.getElementById('nav-links');
     if (!toggle || !links) return;
 
-    toggle.addEventListener('click', function () {
-      var open = links.classList.toggle('max-md:hidden') === false;
+    function setOpen(open) {
+      links.classList.toggle('max-md:hidden', !open);
       toggle.setAttribute('aria-expanded', String(open));
       toggle.textContent = open ? 'START ▼' : 'START ▲';
+    }
+    function isOpen() {
+      return !links.classList.contains('max-md:hidden');
+    }
+
+    toggle.addEventListener('click', function () {
+      setOpen(!isOpen());
     });
 
-    // Bir linke tiklaninca menu kapansin
+    // Bir linke tiklaninca veya Esc'e basilinca menu kapansin
     links.addEventListener('click', function (e) {
-      if (e.target.tagName === 'A' && window.innerWidth < 768) {
-        links.classList.add('max-md:hidden');
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.textContent = 'START ▲';
-      }
+      if (e.target.closest('a') && window.innerWidth < 768) setOpen(false);
     });
-
-    // Esc ile kapat
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && !links.classList.contains('max-md:hidden')) {
-        links.classList.add('max-md:hidden');
-        toggle.setAttribute('aria-expanded', 'false');
-        toggle.textContent = 'START ▲';
-      }
+      if (e.key === 'Escape' && isOpen()) setOpen(false);
     });
   }
 

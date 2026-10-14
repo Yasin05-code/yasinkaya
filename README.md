@@ -1,6 +1,6 @@
 # Yasin Kaya Küçükbaş — Portfolio
 
-Neo-brutalist "retro OS" temalı kişisel portfolyo sitesi.
+Neo-brutalist "retro OS" temalı, pastel gün batımı paletli kişisel portfolyo sitesi.
 Statik HTML + Tailwind CSS. Netlify üzerinde yayında:
 <https://ysnkayakucukbas.netlify.app/>
 
@@ -41,21 +41,21 @@ yayınlar — ayarları arayüzden değiştirmeye gerek yok.
 
 ```
 *.html                 Sayfalar (nav ve footer blokları hepsinde birebir aynı)
-src/input.css          Tema: renkler, .win / .btn / .badge bileşenleri, CRT efekti
+tailwind.config.js     Renk paleti (ink, paper, personal, research, client, contact, sun…)
+src/input.css          Tema: .win / .btn / .badge / .tile bileşenleri, arka plan, CRT efekti
 assets/tailwind.css    Derlenmiş CSS — elle düzenleme, üzerine yazılır
 assets/site.js         Ortak davranış: menü, START menüsü, [X] pencereler, form
 assets/og-image.png    Sosyal medya paylaşım görseli (1200×630)
 assets/favicon.svg     Favicon kaynağı
 images/*.webp          Sitede kullanılan optimize görseller
-images/*.png|jpeg      Orijinal kaynak görseller (yayına çıkmaz)
 scripts/build.cjs      dist/ klasörünü hazırlar
 scripts/preview.cjs    Yerel önizleme sunucusu
 ```
 
 ## Görsel eklerken
 
-Yeni bir görseli `images/` içine koy, sonra optimize `.webp` sürümünü üret —
-sitede `.webp` sürümü kullanılır, orijinal dosya yayına çıkmaz.
+Görseli `.webp` olarak (genişlik ~1400px) `images/` içine koy. Orijinal büyük
+PNG/JPEG dosyalarını repoya ekleme.
 
 ## Notlar
 

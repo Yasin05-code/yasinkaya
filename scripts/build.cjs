@@ -34,9 +34,6 @@ for (const dir of DIRS) {
   if (!fs.existsSync(src)) continue;
   fs.mkdirSync(path.join(DIST, dir), { recursive: true });
   for (const name of fs.readdirSync(src)) {
-    // images/ icinde yalnizca optimize edilmis .webp yayinlanir;
-    // buyuk .png/.jpeg dosyalari kaynak olarak repoda kalir.
-    if (dir === 'images' && !name.endsWith('.webp')) continue;
     fs.copyFileSync(path.join(src, name), path.join(DIST, dir, name));
     count++;
   }
