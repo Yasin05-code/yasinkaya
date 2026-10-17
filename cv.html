@@ -79,96 +79,214 @@
     </nav>
 </header>
 
-<main id="main" class="relative z-10 mx-auto max-w-4xl space-y-8">
+<main id="main" class="relative z-10 mx-auto max-w-6xl space-y-8">
 
-    <div class="win flex flex-col items-start justify-between gap-5 p-6 sm:flex-row sm:items-center md:p-8">
-        <div>
-            <h1 class="no-case text-3xl font-black italic tracking-tight md:text-4xl">Yasin Kaya Küçükbaş</h1>
-            <p class="mt-2 text-sm font-bold uppercase tracking-widest text-gray-600">Software Development Student · Istanbul</p>
+    <!-- Baslik + ozet -->
+    <div class="win">
+        <div class="flex flex-col items-start justify-between gap-5 p-6 sm:flex-row sm:items-center md:p-8">
+            <div>
+                <h1 class="no-case text-3xl font-black italic tracking-tight md:text-4xl">Yasin Kaya Küçükbaş</h1>
+                <p class="mt-2 text-sm font-bold uppercase tracking-widest text-gray-600">Software Development Student · Istanbul</p>
+            </div>
+            <a href="assets/Yasin-Kaya-Kucukbas-CV.pdf" download class="btn shrink-0 hover:bg-personal">↓ Download PDF</a>
         </div>
-        <a href="assets/Yasin-Kaya-Kucukbas-CV.pdf" download class="btn shrink-0 hover:bg-personal">↓ Download PDF</a>
+        <div class="space-y-6 border-t-4 border-ink bg-gray-100 p-6 md:p-8">
+            <p class="max-w-3xl leading-relaxed text-gray-700">
+                Third-year student at <span class="no-case font-bold text-ink">İstanbul Aydın University</span>, focused on
+                full-stack solutions. I use the React and Node.js ecosystems in the client projects I build, and I keep
+                up with machine learning and cybersecurity on the side.
+            </p>
+            <dl class="grid max-w-xl grid-cols-3 gap-3 text-center">
+                <div class="border-[3px] border-ink bg-paper p-3 shadow-win-xs">
+                    <dt class="text-[10px] font-black uppercase tracking-widest text-gray-600">Internships</dt>
+                    <dd class="text-xl font-black">2</dd>
+                </div>
+                <div class="border-[3px] border-ink bg-paper p-3 shadow-win-xs">
+                    <dt class="text-[10px] font-black uppercase tracking-widest text-gray-600">Live projects</dt>
+                    <dd class="text-xl font-black">2</dd>
+                </div>
+                <div class="border-[3px] border-ink bg-paper p-3 shadow-win-xs">
+                    <dt class="text-[10px] font-black uppercase tracking-widest text-gray-600">Certificates</dt>
+                    <dd class="text-xl font-black">3</dd>
+                </div>
+            </dl>
+        </div>
     </div>
 
-    <!-- Egitim -->
-    <section data-window class="win">
-        <div class="win-bar bg-personal">
-            <span>EDUCATION.LOG</span>
-            <button type="button" data-win-close aria-label="Close this window" class="win-close">[X]</button>
-        </div>
-        <div class="space-y-6 p-6 md:p-8">
-            <div class="border-l-4 border-personal pl-4">
-                <h2 class="no-case text-lg font-black text-personal">İstanbul Aydın University</h2>
-                <p class="font-bold">Software Development</p>
-                <p class="text-sm text-gray-700">2022 – present</p>
-            </div>
-            <div class="border-l-4 border-research pl-4">
-                <h2 class="no-case text-lg font-black text-research">Anadolu University</h2>
-                <p class="font-bold">Computer Programming</p>
-                <p class="text-sm text-gray-700">2022 – present</p>
-            </div>
-        </div>
-    </section>
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-[3fr_2fr]">
 
-    <!-- Deneyim -->
-    <section data-window class="win">
-        <div class="win-bar bg-client">
-            <span>EXPERIENCE.LOG</span>
-            <button type="button" data-win-close aria-label="Close this window" class="win-close">[X]</button>
-        </div>
-        <div class="space-y-6 p-6 md:p-8">
-            <div class="border-l-4 border-client pl-4">
-                <h2 class="no-case text-lg font-black text-client">Şelale İşitme Cihazları A.Ş.</h2>
-                <p class="font-bold">Software Intern · 2025</p>
-                <p class="mt-1 text-sm leading-relaxed text-gray-700">
-                    Built the company website from scratch as team coordinator — React front end,
-                    Node.js and MongoDB appointment system.
-                </p>
-            </div>
-            <div class="border-l-4 border-gray-400 pl-4">
-                <h2 class="no-case text-lg font-black text-gray-700">Migros</h2>
-                <p class="font-bold">Retail Associate · 2024 – present</p>
-                <p class="mt-1 text-sm leading-relaxed text-gray-700">
-                    Customer-facing retail work alongside my studies.
-                </p>
-            </div>
-        </div>
-    </section>
+        <!-- Sol sutun -->
+        <div class="space-y-8">
 
-    <!-- Yetenekler -->
-    <section data-window class="win">
-        <div class="win-bar bg-contact">
-            <span>SKILLS.CFG</span>
-            <button type="button" data-win-close aria-label="Close this window" class="win-close">[X]</button>
+            <!-- Deneyim -->
+            <section data-window class="win">
+                <div class="win-bar bg-client">
+                    <span>EXPERIENCE.LOG</span>
+                    <button type="button" data-win-close aria-label="Close this window" class="win-close">[X]</button>
+                </div>
+                <div class="space-y-6 p-6 md:p-8">
+                    <div class="border-l-4 border-client pl-4">
+                        <h2 class="no-case text-lg font-black text-client">OPC Teknoloji San. Tic. Ltd. Şti.</h2>
+                        <p class="font-bold">Software Intern · 2026</p>
+                        <p class="mt-1 text-sm leading-relaxed text-gray-700">
+                            Took part in development and debugging work on the company's existing website.
+                        </p>
+                    </div>
+                    <div class="border-l-4 border-client pl-4">
+                        <h2 class="no-case text-lg font-black text-client">Şelale İşitme Cihazları A.Ş.</h2>
+                        <p class="font-bold">Software Intern · Sep – Dec 2025</p>
+                        <p class="mt-1 text-sm leading-relaxed text-gray-700">
+                            Built the company website from scratch as team coordinator — React front end,
+                            Node.js and MongoDB appointment system.
+                        </p>
+                        <a href="https://selaleisitme.com/" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-sm font-bold italic text-client hover:underline">selaleisitme.com ↗</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projeler -->
+            <section data-window class="win">
+                <div class="win-bar bg-research">
+                    <span>PROJECTS.DIR</span>
+                    <button type="button" data-win-close aria-label="Close this window" class="win-close">[X]</button>
+                </div>
+                <div class="space-y-6 p-6 md:p-8">
+                    <div class="border-l-4 border-personal pl-4">
+                        <h2 class="text-lg font-black text-personal">VocabStrike</h2>
+                        <p class="font-bold">Full-stack vocabulary game · React, FastAPI</p>
+                        <p class="mt-1 text-sm leading-relaxed text-gray-700">
+                            CEFR-levelled word practice with an XP engine, a live leaderboard and an automatic mistake notebook.
+                        </p>
+                        <a href="https://vocabstrike.onrender.com/" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-sm font-bold italic text-personal hover:underline">vocabstrike.onrender.com ↗</a>
+                    </div>
+                    <div class="border-l-4 border-research pl-4">
+                        <h2 class="text-lg font-black text-research">AI Environmental Impact</h2>
+                        <p class="font-bold">Research · Data analysis</p>
+                        <p class="mt-1 text-sm leading-relaxed text-gray-700">
+                            A study of the CO₂ and water cost of training large language models.
+                        </p>
+                    </div>
+                    <a href="projects.html" class="inline-block text-sm font-bold italic text-research hover:underline">All project details →</a>
+                </div>
+            </section>
+
+            <!-- Sertifikalar -->
+            <section data-window class="win">
+                <div class="win-bar bg-research">
+                    <span>CERTIFICATES.LOG</span>
+                    <button type="button" data-win-close aria-label="Close this window" class="win-close">[X]</button>
+                </div>
+                <ul class="space-y-4 p-6 text-sm">
+                    <li class="border-l-4 border-research pl-4">
+                        <p class="font-bold">C# Form Visual &amp; Object-Oriented Programming 101</p>
+                        <p class="text-gray-700">Turkcell · 2023</p>
+                    </li>
+                    <li class="border-l-4 border-research pl-4">
+                        <p class="font-bold">Introduction to C# Programming</p>
+                        <p class="text-gray-700">İSMEK · 2022</p>
+                    </li>
+                    <li class="border-l-4 border-research pl-4">
+                        <p class="font-bold">Fundamentals of Algorithms and Programming</p>
+                        <p class="text-gray-700">İSMEK · 2021</p>
+                    </li>
+                </ul>
+            </section>
         </div>
-        <div class="space-y-6 p-6 md:p-8">
-            <div>
-                <p class="mb-3 text-[10px] font-black uppercase tracking-widest text-gray-600">Front end</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="badge hover:bg-personal-100">React</span>
-                    <span class="badge hover:bg-rose-100">Tailwind CSS</span>
-                    <span class="badge hover:bg-personal-100">Vite</span>
-                    <span class="badge hover:bg-sun-100">JavaScript</span>
-                    <span class="badge hover:bg-research-100">HTML &amp; CSS</span>
+
+        <!-- Sag sutun -->
+        <div class="space-y-8">
+
+            <!-- Egitim -->
+            <section data-window class="win">
+                <div class="win-bar bg-personal">
+                    <span>EDUCATION.LOG</span>
+                    <button type="button" data-win-close aria-label="Close this window" class="win-close">[X]</button>
                 </div>
-            </div>
-            <div>
-                <p class="mb-3 text-[10px] font-black uppercase tracking-widest text-gray-600">Back end &amp; data</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="badge hover:bg-contact-100">Node.js</span>
-                    <span class="badge hover:bg-research-100">Java Spring</span>
-                    <span class="badge hover:bg-client-100">C#</span>
-                    <span class="badge hover:bg-sun-100">MongoDB</span>
+                <div class="space-y-6 p-6">
+                    <div class="border-l-4 border-personal pl-4">
+                        <h2 class="no-case text-lg font-black text-personal">İstanbul Aydın University</h2>
+                        <p class="font-bold">Software Development</p>
+                        <p class="text-sm text-gray-700">2022 – present</p>
+                    </div>
+                    <div class="border-l-4 border-research pl-4">
+                        <h2 class="no-case text-lg font-black text-research">Anadolu University</h2>
+                        <p class="font-bold">Computer Programming</p>
+                        <p class="text-sm text-gray-700">2022 – present</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <p class="mb-3 text-[10px] font-black uppercase tracking-widest text-gray-600">Languages</p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="badge">Turkish — native</span>
-                    <span class="badge">English</span>
+            </section>
+
+            <!-- Yetenekler -->
+            <section data-window class="win">
+                <div class="win-bar bg-contact">
+                    <span>SKILLS.CFG</span>
+                    <button type="button" data-win-close aria-label="Close this window" class="win-close">[X]</button>
                 </div>
-            </div>
+                <div class="space-y-6 p-6">
+                    <div>
+                        <p class="mb-3 text-[10px] font-black uppercase tracking-widest text-gray-600">Front end</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge hover:bg-personal-100">React</span>
+                            <span class="badge hover:bg-rose-100">Tailwind CSS</span>
+                            <span class="badge hover:bg-personal-100">Vite</span>
+                            <span class="badge hover:bg-sun-100">JavaScript</span>
+                            <span class="badge hover:bg-research-100">HTML &amp; CSS</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="mb-3 text-[10px] font-black uppercase tracking-widest text-gray-600">Back end &amp; data</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge hover:bg-contact-100">Node.js</span>
+                            <span class="badge hover:bg-client-100">FastAPI</span>
+                            <span class="badge hover:bg-research-100">Java Spring</span>
+                            <span class="badge hover:bg-client-100">C#</span>
+                            <span class="badge hover:bg-sun-100">MongoDB</span>
+                            <span class="badge hover:bg-client-100">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="mb-3 text-[10px] font-black uppercase tracking-widest text-gray-600">Interested in</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge hover:bg-personal-100">Machine Learning</span>
+                            <span class="badge hover:bg-rose-100">Cybersecurity</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Diller -->
+            <section data-window class="win">
+                <div class="win-bar bg-gray-800">
+                    <span>LANGUAGES.INI</span>
+                    <button type="button" data-win-close aria-label="Close this window" class="win-close">[X]</button>
+                </div>
+                <div class="space-y-4 p-6 text-sm">
+                    <p class="flex justify-between gap-4 border-b-2 border-dashed border-gray-400 pb-3 font-bold">
+                        <span>Turkish</span><span class="text-gray-600">Native</span>
+                    </p>
+                    <div>
+                        <p class="mb-3 font-bold">English</p>
+                        <dl class="grid grid-cols-2 gap-x-4 gap-y-2 text-gray-700">
+                            <div class="flex justify-between"><dt>Reading</dt><dd class="font-black text-ink">B2</dd></div>
+                            <div class="flex justify-between"><dt>Listening</dt><dd class="font-black text-ink">B1</dd></div>
+                            <div class="flex justify-between"><dt>Writing</dt><dd class="font-black text-ink">B1</dd></div>
+                            <div class="flex justify-between"><dt>Speaking</dt><dd class="font-black text-ink">A2</dd></div>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ilgi alanlari -->
+            <section class="win bg-sun-50 p-6">
+                <h2 class="mb-3 text-xs font-black uppercase tracking-widest">Off the keyboard</h2>
+                <div class="flex flex-wrap gap-2">
+                    <span class="badge hover:bg-contact-100">⚽ Football</span>
+                    <span class="badge hover:bg-personal-100">🎮 Video games</span>
+                    <span class="badge hover:bg-client-100">✈ Travel</span>
+                </div>
+            </section>
         </div>
-    </section>
+    </div>
 
     <div class="text-center">
         <a href="contact.html" class="btn hover:bg-personal">Get in touch</a>
