@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Projects | Yasin Kaya Küçükbaş</title>
-    <meta name="description" content="Software projects by Yasin Kaya Küçükbaş: the Şelale İşitme Cihazları React site, an AI environmental impact study, and the Jeff Taxi booking site.">
+    <meta name="description" content="Software projects by Yasin Kaya Küçükbaş: the Şelale İşitme Cihazları React site, an AI environmental impact study, and the VocabStrike vocabulary game.">
     <meta name="author" content="Yasin Kaya Küçükbaş">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#5B47E0">
@@ -19,13 +19,13 @@
     <meta property="og:site_name" content="Yasin Kaya Küçükbaş">
     <meta property="og:url" content="https://ysnkayakucukbas.netlify.app/projects.html">
     <meta property="og:title" content="Projects | Yasin Kaya Küçükbaş">
-    <meta property="og:description" content="Software projects by Yasin Kaya Küçükbaş: the Şelale İşitme Cihazları React site, an AI environmental impact study, and the Jeff Taxi booking site.">
+    <meta property="og:description" content="Software projects by Yasin Kaya Küçükbaş: the Şelale İşitme Cihazları React site, an AI environmental impact study, and the VocabStrike vocabulary game.">
     <meta property="og:image" content="https://ysnkayakucukbas.netlify.app/assets/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Projects | Yasin Kaya Küçükbaş">
-    <meta name="twitter:description" content="Software projects by Yasin Kaya Küçükbaş: the Şelale İşitme Cihazları React site, an AI environmental impact study, and the Jeff Taxi booking site.">
+    <meta name="twitter:description" content="Software projects by Yasin Kaya Küçükbaş: the Şelale İşitme Cihazları React site, an AI environmental impact study, and the VocabStrike vocabulary game.">
     <meta name="twitter:image" content="https://ysnkayakucukbas.netlify.app/assets/og-image.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,20 +124,21 @@
                 </div>
             </article>
             <article data-window class="win win-press flex flex-col">
-                <div class="win-bar bg-client">
-                    <span>CLIENT_WORK</span>
+                <div class="win-bar bg-personal">
+                    <span>PERSONAL_PROJECT</span>
                     <button type="button" data-win-close aria-label="Close this window" class="win-close">[X]</button>
                 </div>
-                <img src="images/jeff.webp" alt="The Jeff Taxi booking website" width="700" height="394" loading="lazy" decoding="async"
+                <img src="images/vocabstrike.webp" alt="The VocabStrike landing page" width="1400" height="788" loading="lazy" decoding="async"
                      class="aspect-video w-full border-b-4 border-ink object-cover object-top">
                 <div class="flex flex-1 flex-col gap-4 p-6">
-                    <h3 class="no-case text-xl font-black italic">Jeff Taxi</h3>
-                    <p class="text-sm leading-relaxed text-gray-700">A booking and promotion site with fast reservations and dynamic pricing.</p>
+                    <h3 class="no-case text-xl font-black italic">VocabStrike</h3>
+                    <p class="text-sm leading-relaxed text-gray-700">A gamified, full-stack vocabulary app with CEFR levels, XP, a live leaderboard and an automatic mistake notebook.</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="badge text-[10px]">Web</span>
-                        <span class="badge text-[10px]">UX</span>
+                        <span class="badge text-[10px]">React</span>
+                        <span class="badge text-[10px]">FastAPI</span>
+                        <span class="badge text-[10px]">PostgreSQL</span>
                     </div>
-                    <a href="#project-jeff" class="btn mt-auto w-full text-xs hover:bg-client">View the gallery ▼</a>
+                    <a href="#project-vocabstrike" class="btn mt-auto w-full text-xs hover:bg-personal">See the details ▼</a>
                 </div>
             </article>
         </div>
@@ -212,34 +213,59 @@
             </div>
         </article>
 
-        <!-- Jeff Taxi -->
-        <article id="project-jeff" class="win scroll-mt-8 overflow-hidden">
+        <!-- VocabStrike -->
+        <article id="project-vocabstrike" class="win scroll-mt-8 overflow-hidden">
             <div class="win-bar bg-ink">
-                <span>VIEW_FILE: JEFF_TAXI_GALLERY.EXE</span>
+                <span>VIEW_FILE: VOCABSTRIKE.EXE</span>
                 <a href="#main" class="win-close" aria-label="Back to the project list">[X]</a>
             </div>
-            <div class="space-y-8 p-6 text-center md:p-10">
-                <h2 class="no-case text-3xl font-black italic md:text-4xl">Jeff Taxi Reservation Site</h2>
-                <p class="mx-auto max-w-2xl leading-relaxed text-gray-700">
-                    Built to the client's brief, the site puts fast booking and dynamic pricing first
-                    while keeping the reservation flow down to a handful of steps.
-                </p>
-                <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-3">
-                    <div class="img-frame aspect-video">
-                        <img src="images/jeff.webp" alt="Jeff Taxi home page" width="1400" height="693" loading="lazy" decoding="async" class="h-full w-full object-cover object-top">
+            <div class="grid gap-10 p-6 md:p-10 lg:grid-cols-2">
+                <div class="space-y-6">
+                    <h2 class="no-case text-3xl font-black italic md:text-4xl">VocabStrike</h2>
+                    <p class="leading-relaxed text-gray-700">
+                        A full-stack English vocabulary game built for exam preparation. Players pick a CEFR
+                        level from A1 to C1, answer word cards, and earn XP that moves them up a live leaderboard.
+                        Every word they miss lands in a personal mistake notebook, so they can retrain on exactly what they forget.
+                    </p>
+                    <ul class="space-y-2 text-sm font-bold">
+                        <li class="flex gap-2"><span class="text-personal">▸</span> 2,443-word pool, levelled A1–C1</li>
+                        <li class="flex gap-2"><span class="text-personal">▸</span> XP engine weighted by word difficulty</li>
+                        <li class="flex gap-2"><span class="text-personal">▸</span> Live phonetics and examples from a dictionary API</li>
+                        <li class="flex gap-2"><span class="text-personal">▸</span> REST API with FastAPI + SQLAlchemy, deployed on Render</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="badge">React</span>
+                        <span class="badge">Vite</span>
+                        <span class="badge">Tailwind</span>
+                        <span class="badge">FastAPI</span>
+                        <span class="badge">SQLAlchemy</span>
+                        <span class="badge">PostgreSQL</span>
                     </div>
-                    <div class="img-frame aspect-video">
-                        <img src="images/jeff2.webp" alt="Jeff Taxi booking form" width="1400" height="1099" loading="lazy" decoding="async" class="h-full w-full object-cover object-top">
-                    </div>
-                    <div class="img-frame aspect-video">
-                        <img src="images/jeff3.webp" alt="Jeff Taxi pricing section" width="1400" height="1066" loading="lazy" decoding="async" class="h-full w-full object-cover object-top">
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <a href="https://vocabstrike.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn hover:bg-personal">Play it live ↗</a>
+                        <a href="https://github.com/Yasin05-code/VocabStrike" target="_blank" rel="noopener noreferrer" class="btn btn-ghost hover:bg-sun-200">Source code ↗</a>
                     </div>
                 </div>
-                <div class="flex flex-wrap justify-center gap-2">
-                    <span class="badge">Web</span>
-                    <span class="badge">UX</span>
-                    <span class="badge">Client work</span>
-                </div>
+                <figure class="space-y-3">
+                    <div class="img-frame aspect-video">
+                        <img src="images/vocabstrike.webp" alt="VocabStrike landing page with the CEFR word pool stats" width="1400" height="788" loading="lazy" decoding="async" class="h-full w-full object-cover object-top">
+                    </div>
+                    <figcaption class="text-center text-xs font-bold italic">IMAGE 3.1: LANDING_PAGE</figcaption>
+                </figure>
+            </div>
+            <div class="grid grid-cols-1 gap-6 border-t-4 border-ink bg-gray-100 p-6 sm:grid-cols-2 md:p-10">
+                <figure class="space-y-3">
+                    <div class="img-frame aspect-video">
+                        <img src="images/vocabstrike2.webp" alt="VocabStrike features: mistake notebook, level-based XP and live leaderboard" width="1020" height="574" loading="lazy" decoding="async" class="h-full w-full object-cover">
+                    </div>
+                    <figcaption class="text-center text-xs font-bold italic">IMAGE 3.2: CORE_FEATURES</figcaption>
+                </figure>
+                <figure class="space-y-3">
+                    <div class="img-frame aspect-video">
+                        <img src="images/vocabstrike3.webp" alt="VocabStrike frequently asked questions section" width="920" height="640" loading="lazy" decoding="async" class="h-full w-full object-cover object-top">
+                    </div>
+                    <figcaption class="text-center text-xs font-bold italic">IMAGE 3.3: HOW_TO_PLAY</figcaption>
+                </figure>
             </div>
         </article>
     </section>
